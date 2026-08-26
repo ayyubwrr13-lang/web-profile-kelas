@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Kelas XI TKJ 1</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dbeafe;
+}
+
+/* NAVBAR */
+nav {
+    background: #0f172a;
+    text-align: center;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    color: #1d4ed8;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.title p {
+    color: #64748b;
+}
+
+/* STRUKTUR */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FOTO PENGURUS */
+.card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* PIKET */
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+tr:hover {
+    background: #eff6ff;
+}
+
+.nama {
+    line-height: 1.8;
+}
+
+/* KEGIATAN */
+.activity {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.activity h3 {
+    color: #1d4ed8;
+    margin-bottom: 8px;
+}
+
+/* GALERI */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="home">
+    <h1>XI TKJ 1</h1>
+    <h2>SMK TELKOM MALANG</h2>
+    <p>Teknik Komputer dan Jaringan</p>
+    <p>Website Struktur dan Kegiatan Kelas</p>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#struktur">Struktur Kelas</a>
+    <a href="#piket">Jadwal Piket</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#galeri">Galeri</a>
+</nav>
+
+<div class="container">
+
+<!-- STRUKTUR KELAS -->
+<section id="struktur">
+
+<div class="title">
+    <h2>📚 Struktur Kelas XI TKJ 1</h2>
+    <p>SMK TELKOM MALANG - Teknik Komputer dan Jaringan</p>
+</div>
+
+<div class="cards">
+
+<!-- WALI KELAS -->
+<div class="card">
+    <img src="Screenshot 2026-08-18 134617.png" alt="Foto Wali Kelas Yaniko">
+    <h3>👨‍🏫 Wali Kelas</h3>
+    <p><strong>Yaniko</strong></p>
+</div>
+
+<!-- KETUA -->
+<div class="card">
+    <img src="X TKJ 1_20_Jhon Terry Eka Ramadhani.jpg" alt="Foto Ketua Kelas">
+    <h3>👑 Ketua Kelas</h3>
+    <p><strong>JHON TERRY EKA RAMADHANI</strong></p>
+</div>
+
+<!-- WAKIL -->
+<div class="card">
+    <img src="X TKJ3_11_Calya Aqila Al Mauzavie .jpg" alt="Foto Wakil Ketua">
+    <h3>👥 Wakil Ketua Kelas</h3>
+    <p><strong>Calya Aqila Al Mouzavie</strong></p>
+</div>
+
+<!-- SEKRETARIS 1 -->
+<div class="card">
+    <img src="X TKJ 1_03_Amelia Fransiska Dyah C.jpg" alt="Foto Sekretaris 1">
+    <h3>📝 Sekretaris 1</h3>
+    <p><strong>Amelia Fransiska Dyah C</strong></p>
+</div>
+
+<!-- SEKRETARIS 2 -->
+<div class="card">
+    <img src="X TKJ 1_27_Naura Yuwan Ramandhita.jpg" alt="Foto Sekretaris 2">
+    <h3>📝 Sekretaris 2</h3>
+    <p><strong>Naura Yuwan R</strong></p>
+</div>
+
+<!-- BENDAHARA 1 -->
+<div class="card">
+    <img src="WhatsApp Image 2026-08-19 at 08.33.33.jpeg" alt="Foto Bendahara 1">
+    <h3>💰 Bendahara 1</h3>
+    <p><strong>Ajeng Ayu Siswati</strong></p>
+</div>
+
+<!-- BENDAHARA 2 -->
+<div class="card">
+    <img src="X TKJ 2_10_Farlitha As Sabrin.jpg" alt="Foto Bendahara 2">
+    <h3>💰 Bendahara 2</h3>
+    <p><strong>Farlitha AS. Sabrin</strong></p>
+</div>
+
+</div>
+</section>
+
+
+<!-- JADWAL PIKET -->
+<section id="piket">
+
+<div class="title">
+    <h2>🧹 Jadwal Piket Kelas</h2>
+    <p>Seluruh siswa XI TKJ 1</p>
+</div>
+
+<div class="table-box">
+
+<table>
+
+<tr>
+    <th>Hari</th>
+    <th>Anggota Piket</th>
+</tr>
+
+<tr>
+<td><strong>Senin</strong></td>
+<td class="nama">
+1. KHAHLIL AZZAM MUDJI MULALINDA<br>
+2. Theodorius Adi Fatlolon<br>
+3. Queensha Aurellia<br>
+4. MUHAMMAD RIDHLO MAULANA AKBAR<br>
+5. Ahmad Sony Fahreza<br>
+6. M. DEVAN ABDIKA BANGSA<br>
+7. Dhaniel Wahyu Bahtiar
+</td>
+</tr>
+
+<tr>
+<td><strong>Selasa</strong></td>
+<td class="nama">
+8. Lintang Albrian Anwar<br>
+9. Calya Aqila Al Mouzavie<br>
+10. Raditya Satrio Abimanyu<br>
+11. Fabrianz Torino Putranzah<br>
+12. MUHAMMAD AKBAR BRILIAN<br>
+13. Ahmad Zidan Alfadly<br>
+14. Juan Dzakwan Hysam
+</td>
+</tr>
+
+<tr>
+<td><strong>Rabu</strong></td>
+<td class="nama">
+15. Ajeng Ayu Siswati<br>
+16. KEN KANZAN MAKHFIYAN<br>
+17. Amelia Fransiska Dyah C<br>
+18. Zanuar Eka Prasetya<br>
+19. Ascha Bryan Firdaus<br>
+20. Muhammad Farid Byantara Kusuma<br>
+21. Silva Talitha Dzakira
+</td>
+</tr>
+
+<tr>
+<td><strong>Kamis</strong></td>
+<td class="nama">
+22. Muhammad Yafiq Nadim Rafif<br>
+23. FIZZA FAHRIAN DWIDAMA<br>
+24. Nadine Anindya Alfian Putri<br>
+25. Zidni Nuro M<br>
+26. Dwi Affandy<br>
+27. Ahmad Khubaisy Muhsinin<br>
+28. FARLITHA AS. SABRIN
+</td>
+</tr>
+
+<tr>
+<td><strong>Jumat</strong></td>
+<td class="nama">
+29. Nico Putra Pramana<br>
+30. BASKORO GADANG WIDHYODONO<br>
+31. Reyghen Ethan Bradly Simanjuntak<br>
+32. JHON TERRY EKA RAMADHANI<br>
+33. Naura Yuwan Ramandhita<br>
+34. Ayyub
+</td>
+</tr>
+
+</table>
+
+</div>
+</section>
+
+
+<!-- KEGIATAN -->
+<section id="kegiatan">
+
+<div class="title">
+    <h2>🎯 Kegiatan Kelas XI TKJ 1</h2>
+    <p>Kegiatan dan aktivitas kelas</p>
+</div>
+
+<div class="activity">
+    <h3>💻 Praktik TKJ</h3>
+    <p>
+        Melaksanakan praktik jaringan komputer, konfigurasi perangkat,
+        instalasi sistem operasi, dan pembelajaran teknologi jaringan.
+    </p>
+</div>
+
+<div class="activity">
+    <h3>📚 Belajar Bersama</h3>
+    <p>
+        Melaksanakan kegiatan belajar dan diskusi bersama untuk
+        meningkatkan pemahaman materi.
+    </p>
+</div>
+
+<div class="activity">
+    <h3>🏆 Kegiatan Sekolah</h3>
+    <p>
+        Mengikuti perlombaan, kegiatan sekolah, dan berbagai acara
+        yang diselenggarakan oleh sekolah.
+    </p>
+</div>
+
+<div class="activity">
+    <h3>🧹 Kerja Bakti</h3>
+    <p>
+        Menjaga kebersihan dan kenyamanan kelas melalui kegiatan
+        piket dan kerja bakti bersama.
+    </p>
+</div>
+
+</section>
+
+
+<!-- GALERI -->
+<section id="galeri">
+
+<div class="title">
+    <h2>📸 Galeri Kelas</h2>
+    <p>Dokumentasi XI TKJ 1</p>
+</div>
+
+<div class="gallery">
+
+    <img src="foto1.jpg" alt="Foto Kegiatan XI TKJ 1">
+
+    <img src="foto2.jpg" alt="Foto Praktik TKJ">
+
+    <img src="foto3.jpg" alt="Foto Bersama XI TKJ 1">
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <p><strong>XI TKJ 1</strong></p>
+    <p>SMK TELKOM MALANG</p>
+    <p>Teknik Komputer dan Jaringan</p>
+    <p>© 2026 XI TKJ 1</p>
+</footer>
+
+</body>
+</html>
